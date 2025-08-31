@@ -422,6 +422,7 @@ body.dark .profile-card__text {
 
 .profile-card__text {
   font-size: 1rem;
+  color: var(--color-dark-bg);
   line-height: 1.6;
 }
 
@@ -618,3 +619,4 @@ body.dark .footer__links a:hover {
     height: auto;
   }
 }
+
