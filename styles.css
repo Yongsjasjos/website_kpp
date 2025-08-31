@@ -281,7 +281,7 @@ body.dark .navbar-menu a {
 
   .profile-card__text {
     font-size: 0.95rem;
-    color: var(--color-light-bg);
+    color: black;
   }
 
   .profile-card__button {
@@ -619,3 +619,4 @@ body.dark .footer__links a:hover {
     height: auto;
   }
 }
+
