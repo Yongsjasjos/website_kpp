@@ -20,6 +20,8 @@
 
 html {
   scroll-behavior: smooth;
+  box-sizing: border-box;
+  overflow-x: hidden;
 }
 
 body {
@@ -27,6 +29,8 @@ body {
   background: var(--color-light-bg);
   color: var(--color-light-text);
   transition: background 0.3s, color 0.3s, opacity 0.5s ease;
+  box-sizing: border-box;
+  overflow-x: hidden;
 
 }
 
@@ -80,8 +84,6 @@ body.dark .navbar-menu a {
   align-items: center;
   justify-content: center;
   z-index: 9999;
-  transition: opacity 0.5s ease;
-
 }
 
 .loader-logo {
@@ -235,6 +237,23 @@ body.dark .navbar-menu a {
 
 /* Carousel Responsif */
 @media (max-width: 768px) {
+  .navbar__toggle {
+    display: block;
+  }
+  .navbar__menu {
+    position: absolute;
+    top: 60px;
+    right: -100%;
+    flex-direction: column;
+    background: var(--color-light-text);
+    width: 200px;
+    padding: 1rem;
+    transition: right 0.3s ease;
+    overflow-x: hidden;
+  }
+  .navbar__menu.open {
+    right: 0;
+  }
   .overlay-text h1 {
     font-size: 1.4rem;
   }
@@ -242,11 +261,9 @@ body.dark .navbar-menu a {
   .overlay-text p {
     font-size: 0.9rem;
   }
-   .services__grid {
-    grid-template-columns: 1fr; /* 1 kolom di HP */
-    gap: 5px; /* Jarak antar card di HP */
-    padding: 0.5rem;
-  }
+   .services__grid { grid-template-columns: 1fr; padding: 0.5rem; }
+  .profile-card { flex-direction: column; align-items: center; padding: 1rem; }
+  .gallery-grid { grid-template-columns: repeat(2, 1fr); }
    .profile-card {
     flex-direction: column;
     text-align: center;
@@ -367,6 +384,10 @@ body.dark .profile-card__text {
 }
 
 @media (max-width: 480px) {
+  .loader-logo {
+    width: 60px;
+    max-width: 50vw;
+  }
   .gallery-grid {
     grid-template-columns: 1fr;
   }
@@ -576,4 +597,22 @@ body.dark .footer__links a {
 
 body.dark .footer__links a:hover {
   color: var(--color-primary);
+}
+
+
+@media (max-width: 576px) {
+  .services__grid {
+    grid-template-columns: 1fr;
+  }
+
+  .profile-card {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .profile-card__image {
+    width: 100%;
+    height: auto;
+  }
 }
