@@ -25,7 +25,7 @@ html {
 }
 
 body {
-  font-family: sans-serif;
+  font-family: 'Montserrat', sans-serif;
   background: var(--color-light-bg);
   color: var(--color-light-text);
   transition: background 0.3s, color 0.3s, opacity 0.5s ease;
@@ -45,7 +45,7 @@ img {
 ============================= */
 body.dark {
   background: var(--color-dark-bg);
-  color: var(--color-dark-text);
+  color: var(--color-light-bg);
 }
 
 body.dark .navbar,
@@ -53,10 +53,11 @@ body.dark .navbar-menu,
 body.dark .card,
 body.dark .gallery img {
   background: var(--color-light-text);
+  color: var(--color-light-bg);
 }
 
 body.dark .navbar-menu a {
-  color: var(--color-primary);
+  color: var(--color-light-bg);
 }
 
 /* =============================
@@ -162,7 +163,7 @@ body.dark .navbar-menu a {
   display: flex;
   align-items: center;
   gap: 0.3rem;
-  color: var(--color-primary);
+  color: var(--color-light-bg);
   text-decoration: none;
   font-weight: 500;
 }
@@ -280,6 +281,7 @@ body.dark .navbar-menu a {
 
   .profile-card__text {
     font-size: 0.95rem;
+    color: var(--color-light-bg);
   }
 
   .profile-card__button {
@@ -325,7 +327,7 @@ body.dark .profile-card {
 }
 
 body.dark .profile-card__text {
-  color: var(--color-primary);
+  color: var(--color-light-bg);
 }
 
 
@@ -588,15 +590,15 @@ body.dark .profile-card__text {
 /* Dark Mode */
 body.dark .footer {
   background: var(--color-dark-bg);
-  color: var(--color-dark-text);
+  color: var(--color-light-bg);
 }
 
 body.dark .footer__links a {
-  color: var(--color-dark-text);
+  color: var(--color-light-bg);
 }
 
 body.dark .footer__links a:hover {
-  color: var(--color-primary);
+  color: var(--color-dark-text);
 }
 
 
