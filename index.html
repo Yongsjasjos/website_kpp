@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Kiarasari</title>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Tombol Toggle Theme -->
+  <button id="toggleTheme" title="Ganti Tema">
+    <span class="material-icons">brightness_6</span>
+  </button>
+
+  <!-- Loader -->
+  <div id="loader">
+    <img src="assets/logo.png" alt="Kiarasari Logo" class="loader-logo">
+  </div>
+
+  <!-- Navbar -->
+<nav class="navbar">
+  <div class="navbar__container">
+    <a href="#" class="navbar__brand">
+      <img src="assets/logo.png" alt="Logo" class="logo">
+      <span>Kiarasari</span>
+    </a>
+
+    <button class="navbar__toggle" id="navToggle">
+      <span class="material-icons">menu</span>
+    </button>
+
+    <ul class="navbar__menu" id="navMenu">
+      <li><a href="#home"><span class="material-icons">home</span> <span>Beranda</span></a></li>
+      <li><a href="#service"><span class="material-icons">build</span> <span>Layanan</span></a></li>
+      <li><a href="#gallery"><span class="material-icons">photo</span> <span>Galeri</span></a></li>
+      <li><a href="#contact"><span class="material-icons">contacts</span> <span>Kontak</span></a></li>
+    </ul>
+  </div>
+</nav>
+
+<!-- Carousel Section -->
+<section id="home" class="carousel-section">
+  <div class="carousel">
+    <div class="slide active" style="background-image: url('assets/eut2_hq_677e951.jpeg');"></div>
+    <div class="slide" style="background-image: url('assets/eut2_hq_67d660d.jpeg');"></div>
+    <div class="slide" style="background-image: url('assets/eut2_hq_67d812f.jpeg');"></div>
+  </div>
+  <div class="carousel__overlay">
+    <div class="overlay-text">
+      <h1>PO. Kiarasari Kencana Pasundan</h1>
+      <p>Kami percaya bahwa setiap perjalanan adalah pengalaman yang layak dikenang, dan untuk itu kami merancang setiap detail layanan kami dengan cermat, dari kualitas armada hingga personalisasi kenyamanan bagi setiap penumpang.</p>
+    </div>
+  </div>
+</section>
+
+
+  <!-- Services -->
+<section class="services" id="service">
+  <div class="container services__grid">
+    <div class="card">
+      <span class="material-icons">directions_bus</span>
+      <h3>AKAP</h3>
+      <p></p>
+    </div>
+    <div class="card">
+      <span class="material-icons">airport_shuttle</span>
+      <h3>AKDP</h3>
+      <p></p>
+    </div>
+    <div class="card">
+      <span class="material-icons">tour</span>
+      <h3>Pariwisata</h3>
+      <p></p>
+    </div>
+  </div>
+</section>
+
+<!-- Profile Card -->
+<div class="profile-card">
+  <div class="profile-card__body">
+    <p class="profile-card__text">
+      PO Kiarasari Kencana Pasundan adalah perusahaan transportasi darat yang berdomisili di Bandung, Jawa Barat, dan resmi berdiri pada 24 Februari 2024. Kami hadir dengan visi untuk merevolusi dunia transportasi dengan menghadirkan layanan berkelas yang mengutamakan kenyamanan, keamanan, dan keunggulan pelayanan.
+    </p>
+    <a href="#contact" class="profile-card__button">Hubungi Kami</a>
+  </div>
+  <img class="profile-card__image" src="assets/eut2_hq_67e15ad.jpeg" alt="Ilustrasi Kiarasari">
+</div>
+
+  <!-- Galeri -->
+  <section id="gallery" class="gallery">
+    <h2>Galeri Perusahaan</h2>
+    <div class="gallery-row full">
+      <img src="assets/eut2_hq_67fbc50.jpeg" alt="Galeri 1">
+    </div>
+    <div class="gallery-grid">
+      <img src="assets/eut2_hq_680a3c2.jpeg" alt="Galeri 2">
+      <img src="assets/eut2_hq_68165e8.jpeg" alt="Galeri 3">
+      <img src="assets/eut2_hq_687b354.jpeg" alt="Galeri 4">
+      <img src="assets/eut2_hq_687c9ed.jpeg" alt="Galeri 5">
+    </div>
+  </section>
+
+  <!-- Kontak -->
+  <section id="contact" class="contact">
+    <h2>Hubungi Kami</h2>
+    <form id="contactForm">
+      <input type="text" name="nama" placeholder="Nama" required>
+      <input type="email" name="email" placeholder="Email" required>
+      <textarea name="pesan" placeholder="Pesan Anda..." required></textarea>
+      <button type="submit">Kirim</button>
+    </form>
+  </section>
+
+  <!-- Footer -->
+<footer class="footer">
+  <div class="footer__container">
+    <div class="footer__brand">
+      <img src="assets/logo.png" alt="Kiarasari Logo">
+      <span>PO. Kiarasari Kencana Pasundan</span>
+    </div>
+
+    <div class="footer__links">
+      <a href="https://www.youtube.com/@KKP-Corporation" target="_blank">
+        <i class="fab fa-youtube"></i> YouTube
+      </a>
+      <a href="https://www.instagram.com/ptkkp.kiarasari/" target="_blank">
+        <i class="fab fa-instagram"></i> Instagram
+      </a>
+      <a href="https://www.whatsapp.com/channel/0029Vah9RK56BIEZyqcPNx2i" target="_blank">
+        <i class="fab fa-whatsapp"></i> WhatsApp
+      </a>
+    </div>
+
+    <div class="footer__info">
+      <p>&copy; 2024 Kiarasari. All rights reserved.</p>
+    </div>
+  </div>
+</footer>
+
+
+  <script src="script.js"></script>
+</body>
+</html>
